@@ -1,0 +1,91 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 18% 97%; /* Light cool gray */
+    --foreground: 220 10% 25%; /* Dark slate gray */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 10% 25%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 25%;
+    --primary: 145 63% 42%; /* Natural green */
+    --primary-foreground: 145 20% 96%; /* Light off-white for text on green */
+    --secondary: 215 25% 65%; /* Muted blue-gray */
+    --secondary-foreground: 215 15% 20%; /* Darker text for blue-gray */
+    --muted: 220 15% 92%; /* Lighter gray */
+    --muted-foreground: 220 8% 45%; /* Medium gray for muted text */
+    --accent: 340 82% 60%; /* Vibrant cherry */
+    --accent-foreground: 0 0% 100%; /* White text on cherry */
+    --destructive: 0 72% 51%; /* Standard destructive red */
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 88%; /* Light gray border */
+    --input: 220 13% 90%; /* Input background */
+    --ring: 145 63% 49%; /* Primary green for focus rings */
+    
+    /* Chart Colors */
+    --chart-1: 145 63% 42%; /* Green (Primary) */
+    --chart-2: 200 70% 50%; /* Blue */
+    --chart-3: 340 82% 55%; /* Cherry */
+    --chart-4: 220 10% 55%; /* Gray */
+    --chart-5: 160 50% 50%; /* Lighter Green/Teal */
+    --radius: 0.5rem;
+
+    /* Sidebar Light Theme */
+    --sidebar-background: 220 18% 95%; /* Slightly different light gray */
+    --sidebar-foreground: 220 10% 25%;
+    --sidebar-primary: 145 63% 42%; 
+    --sidebar-primary-foreground: 145 20% 96%;
+    --sidebar-accent: 220 18% 90%; /* Lighter gray for hover */
+    --sidebar-accent-foreground: 145 63% 42%; /* Primary green for text on hover */
+    --sidebar-border: 220 13% 85%;
+    --sidebar-ring: 145 63% 49%;
+  }
+
+  .dark {
+    --background: 220 15% 15%; /* Very dark blue-gray */
+    --foreground: 220 10% 85%; /* Light gray text */
+    --card: 220 15% 18%; /* Slightly lighter dark blue-gray */
+    --card-foreground: 220 10% 85%;
+    --popover: 220 15% 15%;
+    --popover-foreground: 220 10% 85%;
+    --primary: 145 58% 52%; /* Brighter green for dark mode */
+    --primary-foreground: 145 15% 10%; /* Dark text on green */
+    --secondary: 215 20% 35%; /* Darker muted blue-gray */
+    --secondary-foreground: 215 10% 75%; /* Lighter text for dark secondary */
+    --muted: 220 15% 25%; /* Dark gray */
+    --muted-foreground: 220 8% 65%; /* Medium-light gray for muted text */
+    --accent: 340 78% 68%; /* Brighter cherry for dark mode */
+    --accent-foreground: 0 0% 10%; /* Dark text on cherry */
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 28%; /* Darker gray border */
+    --input: 220 15% 25%; /* Input background */
+    --ring: 145 58% 52%; /* Primary green for focus rings */
+
+    /* Chart Colors - Dark Mode (can be same or adjusted) */
+    --chart-1: 145 58% 52%;
+    --chart-2: 200 65% 58%;
+    --chart-3: 340 78% 65%;
+    --chart-4: 220 10% 65%;
+    --chart-5: 160 45% 58%;
+    
+    /* Sidebar Dark Theme */
+    --sidebar-background: 220 15% 12%; /* Slightly darker than main dark bg */
+    --sidebar-foreground: 220 10% 85%;
+    --sidebar-primary: 145 58% 52%;
+    --sidebar-primary-foreground: 145 15% 10%;
+    --sidebar-accent: 220 15% 22%; /* Lighter dark for hover */
+    --sidebar-accent-foreground: 145 58% 52%; /* Primary green for text on hover */
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 145 58% 52%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground overflow-x-hidden; /* Added overflow-x-hidden */
+  }
+}
